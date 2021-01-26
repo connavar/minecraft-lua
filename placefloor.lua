@@ -4,7 +4,7 @@ function place()
 	turtle.turnLeft()
 	ok = turtle.forward()
 
-	print("Forward: " .. ok)
+	print(string.format("Forward: %s\n", tostring(true)))
 
 	if ok then
 		print("Left Turn")
