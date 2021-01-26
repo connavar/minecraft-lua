@@ -25,7 +25,6 @@ function place()
 		turtle.turnLeft()
 		turtle.turnLeft()
 		turtle.forward()
-		turtle.forward()
 		turtle.turnRight()
 	else
 		turtle.turnLeft()
