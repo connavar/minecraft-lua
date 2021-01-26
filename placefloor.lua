@@ -1,23 +1,3 @@
-print("Starting")
-for j = 1, 30 do
-	print("Outer loop - column: " .. j)
-	for i = 1, 32 do
-		print("Inner loop - row: " .. i)
-		place()
-	end
-	turtle.turnRight()
-	turtle.turnRight()
-	print("Turning")
-	ok = turtle.forward()
-	if ok then
-		print("Turn success")
-		turtle.turnRight()
-	else
-		print("Turn fail")
-		return
-	end
-end
-
 function place()
 	turtle.digDown()
 	turtle.placeDown()
@@ -49,5 +29,25 @@ function place()
 		turtle.turnRight()
 	else
 		turtle.turnLeft()
+	end
+end
+
+print("Starting")
+for j = 1, 30 do
+	print("Outer loop - column: " .. j)
+	for i = 1, 32 do
+		print("Inner loop - row: " .. i)
+		place()
+	end
+	turtle.turnRight()
+	turtle.turnRight()
+	print("Turning")
+	ok = turtle.forward()
+	if ok then
+		print("Turn success")
+		turtle.turnRight()
+	else
+		print("Turn fail")
+		return
 	end
 end
