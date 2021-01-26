@@ -4,6 +4,8 @@ function place()
 	turtle.turnLeft()
 	ok = turtle.forward()
 
+	print("Forward: " .. ok)
+
 	if ok then
 		print("Left Turn")
 		turtle.digDown()
