@@ -15,6 +15,7 @@ function place()
 		turtle.forward()
 		ok = turtle.forward()
 	else
+		print("Else!")
 		turtle.turnRight()
 		turtle.turnRight()
 		ok = turtle.forward()
