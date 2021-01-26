@@ -30,6 +30,9 @@ function place()
 	else
 		turtle.turnLeft()
 	end
+
+	ok = turtle.forward()
+	return ok
 end
 
 print("Starting")
@@ -37,7 +40,10 @@ for j = 1, 30 do
 	print("Outer loop - column: " .. j)
 	for i = 1, 32 do
 		print("Inner loop - row: " .. i)
-		place()
+		moved = place()
+		if not moved then
+			return
+		end
 	end
 	turtle.turnRight()
 	turtle.turnRight()
