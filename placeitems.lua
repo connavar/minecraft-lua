@@ -28,7 +28,7 @@ while true do
 		end
 
 	else
-		if column % 2 then
+		if column % 2 == 0 then
 			print("Turn right")
 			turtle.turnRight()
 			if turtle.forward() then
